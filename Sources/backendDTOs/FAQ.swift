@@ -6,9 +6,9 @@ import Foundation
 
 public struct FAQCategoryAPIModel: Codable, Equatable {
     
-    let id: UUID
-    let title: String
-    let questions: [FAQQuestionAPIModel]
+    public let id: UUID
+    public let title: String
+    public let questions: [FAQQuestionAPIModel]
     
     public init(id: UUID, title: String, questions: [FAQQuestionAPIModel]) {
         self.id = id
@@ -19,10 +19,10 @@ public struct FAQCategoryAPIModel: Codable, Equatable {
 
 public struct FAQQuestionAPIModel: Codable, Equatable {
     
-    let id: UUID
-    let title: String
-    let text: String
-    let isFeatured: Bool
+    public let id: UUID
+    public let title: String
+    public let text: String
+    public let isFeatured: Bool
     
     public init(id: UUID, title: String, text: String, isFeatured: Bool) {
         self.id = id
